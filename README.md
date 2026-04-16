@@ -1,3 +1,8 @@
+# Test this out on hello rasa:
+
+[![Launch on Hello Rasa](https://hello.rasa.com/launch.svg)](https://hello.rasa.com/go?repo=amalsgit/rasa-agent-for-testing)
+
+
 # Basic Rasa Template
 
 A simple, general-purpose conversational agent template that provides essential conversational capabilities.
