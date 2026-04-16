@@ -46,6 +46,7 @@ If you change dependencies in `pyproject.toml`, run `uv lock` to refresh `uv.loc
 This template provides a foundation for building conversational agents with:
 - **Basic conversational flows**: Greetings, help, feedback, and human handoff
 - **Help system**: Users can ask for assistance and get guided responses
+- **Public GitHub repository Q&A**: Ask about an `owner/repo` on GitHub; a **ReAct sub-agent** calls the **DeepWiki** MCP server so answers stay grounded in that repository’s documentation
 - **Feedback collection**: Gather user feedback to improve the agent
 - **Human handoff**: Seamlessly transfer conversations to human agents when needed
 
@@ -57,6 +58,8 @@ This template provides a foundation for building conversational agents with:
 ├── domain/          # Agent configuration (slots, responses, actions)
 ├── docs/            # Knowledge base documents (optional)
 ├── prompts/         # LLM prompts for enhanced responses
+├── sub_agents/      # ReAct sub-agent configs (e.g. DeepWiki MCP integration)
+├── endpoints.yml    # MCP servers, model groups, NLG, etc.
 └── config.yml       # Training pipeline configuration
 ```
 
