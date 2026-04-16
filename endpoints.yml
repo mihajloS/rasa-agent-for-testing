@@ -77,4 +77,4 @@ model_groups:
 mcp_servers:
   - name: deepwiki
     url: https://mcp.deepwiki.com/mcp
-    type: https
+    type: http

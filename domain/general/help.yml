@@ -5,7 +5,7 @@ slots:
     type: text
     initial_value: |
       - What can you do?
-      - Ask about a public GitHub repo (e.g. how does authentication work in rasaHQ/rasa?)
+      - Ask about a public GitHub repo using DeepWiki (e.g. how does X work in rasaHQ/rasa?)
       - Connect me to a human
       - Browse FAQs
     mappings:
@@ -15,6 +15,7 @@ responses:
   utter_what_can_you_do:
     - text: |
         I can help you with a few basics like:
+        - Answering questions about a public GitHub repository (owner/repo), grounded in that repo's docs via DeepWiki
         - Connecting you to a human
         - Help you try out the FAQs
         - Collect your feedback

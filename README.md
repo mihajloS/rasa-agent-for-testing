@@ -25,8 +25,8 @@ This repo pins dependencies in `uv.lock`. Use [uv](https://docs.astral.sh/uv/) s
    # Train a model
    uv run rasa train
 
-   # Talk to the assistant in the terminal
-   uv run rasa shell
+   # Talk to the assistant 
+   uv run rasa inspect --nextgen
 
    # Run the HTTP server (after training, or with a trained model path)
    uv run rasa run

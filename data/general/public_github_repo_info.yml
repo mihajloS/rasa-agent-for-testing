@@ -17,15 +17,4 @@ flows:
         description: >
           The user's concrete question about that repository: behavior, design,
           usage, setup, or "what does X do in this repo".
-      - call: ask_question
-        mcp_server: deepwiki
-        mapping:
-          input:
-            - param: repoName
-              slot: github_repo
-            - param: question
-              slot: github_repo_question
-          output:
-            - slot: deepwiki_answer
-              value: result.structuredContent.result
-      - action: utter_deepwiki_answer
+      - call: deepwiki_github
