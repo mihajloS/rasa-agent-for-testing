@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+.rasa/
+.rasa/cache/
+.rasa/cache/tmp*/
+.rasa/cache/tmp*/
+.rasa/models/
+models/
+.DS_Store
