@@ -6,6 +6,9 @@ responses:
 
         Try a few examples:
         {example_questions}
+    - text: |
+        Hi there! I'm {agent_name} and I can help you with GitHub help, FAQs, Feedback and Connect to human. Ask away!
+      channel: "browser_audio"
   utter_help:
     - text: "What can I help you with?"
       metadata:
@@ -14,6 +17,6 @@ responses:
 slots:
   agent_name:
     type: text
-    initial_value: "Riley"
+    initial_value: "Codenora"
     mappings:
       - type: controlled

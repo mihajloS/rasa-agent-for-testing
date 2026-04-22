@@ -11,7 +11,7 @@ slots:
     mappings:
       - type: controlled
 
-responses: 
+responses:
   utter_what_can_you_do:
     - text: |
         I can help you with a few basics like:
@@ -19,5 +19,9 @@ responses:
         - Connecting you to a human
         - Help you try out the FAQs
         - Collect your feedback
+      metadata:
+        rephrase: True
+    - text: I can help you with GitHub help, FAQs, Feedback and Connect to human
+      channel: browser_audio
       metadata:
         rephrase: True
