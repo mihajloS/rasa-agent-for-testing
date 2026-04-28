@@ -11,6 +11,11 @@ slots:
     mappings:
       - type: from_llm
 
+  deepwiki_answer:
+    type: text
+    mappings:
+      - type: from_llm
+
 responses:
   utter_ask_github_repo:
     - text: "Which public GitHub repository should I look up? Use owner/repo (for example, rasaHQ/rasa)."
@@ -19,5 +24,10 @@ responses:
 
   utter_ask_github_repo_question:
     - text: "What would you like to know about that repository?"
+      metadata:
+        rephrase: True
+
+  utter_deepwiki_answer:
+    - text: "{deepwiki_answer}"
       metadata:
         rephrase: True
