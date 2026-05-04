@@ -1,0 +1,22 @@
+flows:
+  fetch_url_summary:
+    name: Fetch and summarize a URL
+    description: >
+      Fetches and summarizes the content of a given web page URL. Use when the user
+      provides a URL and wants to know what the page is about, get a summary,
+      or ask a specific question about the content of that page. Do not use for
+      GitHub repository questions (use the GitHub repo flows for those).
+    steps:
+      - collect: url_to_fetch
+        description: >
+          The full web page URL to fetch (e.g. https://example.com/article). Must
+          include the protocol (https:// or http://).
+      - collect: url_question
+        description: >
+          The user's specific question about the page content, or what they want
+          to know (e.g. "what is this about", "summarize the main points",
+          "what is the pricing").
+      - call: url_fetcher
+        exit_if:
+          - slots.url_summary is not null
+      - action: utter_url_summary

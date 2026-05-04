@@ -78,3 +78,9 @@ mcp_servers:
   - name: deepwiki
     url: https://mcp.deepwiki.com/mcp
     type: http
+
+  # Exa MCP — fetch and search public web pages. Requires EXA_API_KEY in .env.
+  # https://docs.exa.ai/reference/exa-mcp
+  - name: exa
+    url: https://mcp.exa.ai/mcp?exaApiKey=${EXA_API_KEY}&tools=web_fetch_exa
+    type: http
